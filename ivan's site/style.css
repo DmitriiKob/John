@@ -1,31 +1,28 @@
+@import url(//db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide);
 body{
-    background-image: url("Frame1.svg");
         background-image: url(Frame1.svg);
         background-position-x: center;
-        /* background-position-y: -200%; */
+        background-position-y: 209px;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         background-color: #151515;
         font-family: 'Druk Wide';
         color: #ffff;
         padding: 0;
-        margin: 0;
         border: 0;
-        height: 100vh;
-        background-size: 900px;
+        /* height: 100vh; */
+        background-size: 500px;
 }
 
-@media screen and ( max-width:768px ) {
+@media screen and ( max-width:393px ) {
     .backgroundLogo{
-        background-size: cover;
-        background-position: 50% 50%;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-        height: 50%;
-        margin-right: 50%;
+        background-size: 400px;
+        background-position: 0 200px;
+        background-position-y: 160px;
     }
     body{
         height: 100%;
+        background-size: 700px;
     }
     .header{
         margin-inline: 1.5%;
@@ -41,27 +38,39 @@ body{
     .hero{
         margin-left:auto;
         margin-right: auto;
+        margin-top: 60px;
         width: 100%;
         width: 100%;
         height: 81%;
     }
 
-    .hero>h1{
+    .hero>div{
         display: flex;
-        text-align: center;
         flex-direction: column;
         font-family: 'Druk Wide';
         font-style: normal;
         font-weight: 700;
-        font-size: 26px;
-        line-height: 150%;
+        font-size: 16px;
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
         margin: 0;
         padding: 0;
     }
+    h1{
+        margin: 0;
+    }
+    span{
+    color: disc(rgba(120, 255, 241, 1)
+   rgba(208, 222, 255, 1)
+   rgba(223, 151, 223, 1)
+   rgba(151, 235, 190, 1)
+   rgba(241, 252, 175, 1)
+   rgba(194, 227, 241, 1));
+    }
+
     .second{
+
         color: disc(rgba(120, 255, 241, 1)
         rgba(208, 222, 255, 1)
         rgba(223, 151, 223, 1)
@@ -69,16 +78,25 @@ body{
         rgba(241, 252, 175, 1)
         rgba(194, 227, 241, 1));
     }
+.destop{
+    display: none;
+}
 
-
+    span{
+    background:conic-gradient(from 196.91deg at 50% 50%, #FFFFFF 0deg, #000000 45deg, #FFFFFF 90deg, #000000 135deg, #FFFFFF 180deg, #000000 225deg, #FFFFFF 270deg, #000000 315deg, #FFFFFF 360deg), conic-gradient(from 196.91deg at 50% 50%, #FFFFFF 0deg, #000000 45deg, #FFFFFF 90deg, #000000 135deg, #FFFFFF 180deg, #000000 225deg, #FFFFFF 270deg, #000000 315deg, #FFFFFF 360deg), radial-gradient(100% 100% at 100% 0%, #78FFF1 0%, #D0DEFF 20%, #DF97DF 40%, #97EBBE 60%, #F1FCAF 80%, #C2E3F1 100%);
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    background-blend-mode: screen, difference, normal;
+    }
     .mob{
-    display: flex;
-    position: relative;
-    flex-direction: column;
     justify-content: center;
-    width: 353px;
+    text-align: center;
+    width: 80%;
     height: 66px;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(110.86deg, #FFFFFF 0%, #000000 23.96%, #FFFFFF 50.06%, #000000 75.08%, #FFFFFF 102.24%), linear-gradient(110.86deg, #FFFFFF 0%, #000000 25.56%, #FFFFFF 51.12%, #000000 76.68%, #FFFFFF 102.24%), radial-gradient(100% 100% at 100% 0%, #78FFF1 0%, #D0DEFF 20%, #DF97DF 40%, #97EBBE 60%, #F1FCAF 80%, #C2E3F1 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(110.86deg, #FFFFFF 0%, #000000 23.96%, #FFFFFF 50.06%, #000000 75.08%, #FFFFFF 102.24%), linear-gradient(110.86deg, #FFFFFF 0%, #000000 25.56%, #FFFFFF 51.12%, #000000 76.68%, #FFFFFF 102.24%), radial-gradient(100% 100% at 100% 0%, #78FFF1 0%, #D0DEFF 20%, #DF97DF 40%, #97EBBE 60%, #F1FCAF 80%, #C2E3F1 100%);
     background-blend-mode: normal, screen, difference, normal;
     border-radius: 10px;
     font-family: 'Druk Wide';
@@ -88,8 +106,66 @@ body{
     line-height: 26px;
     text-transform: uppercase;
     color: #000000;
+    margin-inline:10%;
+    margin-top: 30px;
+    }
+
+   body{
+     margin:0;
+   }
+   .secondPage>div{
+     padding:20px;
+     font-size:40px;
+     cursor:pointer;
+   }
+
+
+   }
+   .dropdown{
+     display:flex;
+     position:fixed;
+     padding: 0;
+     top:0;
+     left:0;
+    background-image: url(backgroundBurger.svg);
+     width:100%;
+     height:100%;
+     flex-direction:column;
+     justify-content:center;
+     align-items:center;
+     top:-100%;
+     transition-duration:0.3s; 
+   }
+   
+   
+   a{
+    text-transform: uppercase;
+    margin-top: 5%;
+    flex-direction: column;
+    font-size: 23px;
+    color: #000000;
+    align-items: center;
+    cursor: pointer;
+    border: #000000 3 px;
+    }
+
+    a:hover{
+    color: transparent;
+    }
+
+    .exit{
+        margin-top: 7%;
+    }
+    
+@media screen and ( min-width:394px ){
+    body{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .header{
+        display: inline;
+        margin-inline: 5px;
+        
     }
 }
-
-
-
