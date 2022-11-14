@@ -13,8 +13,46 @@ body{
         /* height: 100vh; */
         background-size: 500px;
 }
+.hero{
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 60px;
+    width: 100%;
+    width: 100%;
+    height: 81%;
+    justify-content: center;
+    
+}
 
-@media screen and ( max-width:393px ) {
+.hero>div{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Druk Wide';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 0;
+}
+.header{
+    margin-inline: 1.5%;
+    margin-top: 11px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.burger{
+    margin-left: 75%;
+}
+
+@media screen and ( max-width:434px ) {
     .backgroundLogo{
         background-size: 400px;
         background-position: 0 200px;
@@ -24,50 +62,9 @@ body{
         height: 100%;
         background-size: 700px;
     }
-    .header{
-        margin-inline: 1.5%;
-        margin-top: 11px;
-        justify-content: center;
-        display: flex;
-        flex-direction: row;
-    }
-    .burger{
-        margin-left: 75%;
-    }
+   
 
-    .hero{
-        margin-left:auto;
-        margin-right: auto;
-        margin-top: 60px;
-        width: 100%;
-        width: 100%;
-        height: 81%;
-    }
-
-    .hero>div{
-        display: flex;
-        flex-direction: column;
-        font-family: 'Druk Wide';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        margin: 0;
-        padding: 0;
-    }
-    h1{
-        margin: 0;
-    }
-    span{
-    color: disc(rgba(120, 255, 241, 1)
-   rgba(208, 222, 255, 1)
-   rgba(223, 151, 223, 1)
-   rgba(151, 235, 190, 1)
-   rgba(241, 252, 175, 1)
-   rgba(194, 227, 241, 1));
-    }
+   
 
     .second{
 
@@ -82,9 +79,8 @@ body{
     display: none;
 }
 
-    span{
-    background:conic-gradient(from 196.91deg at 50% 50%, #FFFFFF 0deg, #000000 45deg, #FFFFFF 90deg, #000000 135deg, #FFFFFF 180deg, #000000 225deg, #FFFFFF 270deg, #000000 315deg, #FFFFFF 360deg), conic-gradient(from 196.91deg at 50% 50%, #FFFFFF 0deg, #000000 45deg, #FFFFFF 90deg, #000000 135deg, #FFFFFF 180deg, #000000 225deg, #FFFFFF 270deg, #000000 315deg, #FFFFFF 360deg), radial-gradient(100% 100% at 100% 0%, #78FFF1 0%, #D0DEFF 20%, #DF97DF 40%, #97EBBE 60%, #F1FCAF 80%, #C2E3F1 100%);
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    .web{
+    background: conic-gradient(from 196.91deg at 50% 50%, #FFFFFF 0deg, #000000 45deg, #FFFFFF 90deg, #000000 135deg, #FFFFFF 180deg, #000000 225deg, #FFFFFF 270deg, #000000 315deg, #FFFFFF 360deg), conic-gradient(from 196.91deg at 50% 50%, #FFFFFF 0deg, #000000 45deg, #FFFFFF 90deg, #000000 135deg, #FFFFFF 180deg, #000000 225deg, #FFFFFF 270deg, #000000 315deg, #FFFFFF 360deg), radial-gradient(100% 100% at 100% 0%, #78FFF1 0%, #D0DEFF 20%, #DF97DF 40%, #97EBBE 60%, #F1FCAF 80%, #C2E3F1 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -157,15 +153,86 @@ body{
         margin-top: 7%;
     }
     
-@media screen and ( min-width:394px ){
-    body{
-        display: flex;
-        width: 100%;
-        height: 100%;
+    @media screen and (max-width: 684px) and (min-width: 435px){
+    
+    .web{
+    margin-top: 10px;
+
     }
-    .header{
-        display: inline;
-        margin-inline: 5px;
-        
+    span{
+    background: conic-gradient(from 196.91deg at 50% 50%, #FFFFFF 0deg, #000000 45deg, #FFFFFF 90deg, #000000 135deg, #FFFFFF 180deg, #000000 225deg, #FFFFFF 270deg, #000000 315deg, #FFFFFF 360deg), conic-gradient(from 196.91deg at 50% 50%, #FFFFFF 0deg, #000000 45deg, #FFFFFF 90deg, #000000 135deg, #FFFFFF 180deg, #000000 225deg, #FFFFFF 270deg, #000000 315deg, #FFFFFF 360deg), radial-gradient(100% 100% at 100% 0%, #78FFF1 0%, #D0DEFF 20%, #DF97DF 40%, #97EBBE 60%, #F1FCAF 80%, #C2E3F1 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    background-blend-mode: screen, difference, normal;
+    }
+.hero>div{
+    font-weight: 700;
+    font-size: x-large;
+    line-height: 150%;
+}
+
+.mob{
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    height: 66px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(110.86deg, #FFFFFF 0%, #000000 23.96%, #FFFFFF 50.06%, #000000 75.08%, #FFFFFF 102.24%), linear-gradient(110.86deg, #FFFFFF 0%, #000000 25.56%, #FFFFFF 51.12%, #000000 76.68%, #FFFFFF 102.24%), radial-gradient(100% 100% at 100% 0%, #78FFF1 0%, #D0DEFF 20%, #DF97DF 40%, #97EBBE 60%, #F1FCAF 80%, #C2E3F1 100%);
+    background-blend-mode: normal, screen, difference, normal;
+    border-radius: 10px;
+    font-family: 'Druk Wide';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-inline:10%;
+    margin-top: 30px;
+}
+.destop{
+    display: none;
+}
+}
+
+@media screen and (min-width: 685px){
+    .destop{
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+        height: 66px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(110.86deg, #FFFFFF 0%, #000000 23.96%, #FFFFFF 50.06%, #000000 75.08%, #FFFFFF 102.24%), linear-gradient(110.86deg, #FFFFFF 0%, #000000 25.56%, #FFFFFF 51.12%, #000000 76.68%, #FFFFFF 102.24%), radial-gradient(100% 100% at 100% 0%, #78FFF1 0%, #D0DEFF 20%, #DF97DF 40%, #97EBBE 60%, #F1FCAF 80%, #C2E3F1 100%);
+        background-blend-mode: normal, screen, difference, normal;
+        border-radius: 10px;
+        font-family: 'Druk Wide';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-inline:25%;
+        margin-top: 30px;
+    }
+    .mob{
+        display: none;
+    }
+    .web{
+        margin-top: 10px;
+    
+        }
+        span{
+        background: conic-gradient(from 196.91deg at 50% 50%, #FFFFFF 0deg, #000000 45deg, #FFFFFF 90deg, #000000 135deg, #FFFFFF 180deg, #000000 225deg, #FFFFFF 270deg, #000000 315deg, #FFFFFF 360deg), conic-gradient(from 196.91deg at 50% 50%, #FFFFFF 0deg, #000000 45deg, #FFFFFF 90deg, #000000 135deg, #FFFFFF 180deg, #000000 225deg, #FFFFFF 270deg, #000000 315deg, #FFFFFF 360deg), radial-gradient(100% 100% at 100% 0%, #78FFF1 0%, #D0DEFF 20%, #DF97DF 40%, #97EBBE 60%, #F1FCAF 80%, #C2E3F1 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        background-blend-mode: screen, difference, normal;
+        }
+    .hero>div{
+        font-weight: 700;
+        font-size: x-large;
+        line-height: 150%;
     }
 }
