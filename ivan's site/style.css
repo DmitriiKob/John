@@ -43,17 +43,26 @@ h1{
 .header{
     margin-inline: 1.5%;
     margin-top: 11px;
-    justify-content: center;
     display: flex;
     flex-direction: row;
     position: relative;
-}
-.burger{
-    margin-left: 75%;
+    justify-content: space-between;
 }
 
 a{
     text-decoration: none;
+}
+
+.dropdownHeader{
+    display: none;
+    justify-content: space-between;
+    margin-inline: 5%;
+    width: calc(100% - 5%);
+    position: fixed;
+    top: 11px;
+    align-items: center;
+    
+    
 }
 
 @media screen and ( max-width:434px ) {
@@ -156,9 +165,7 @@ a{
     transition-duration: 0.3s;
     }
 
-    .exit{
-        margin-top: 7%;
-    }
+
     
     @media screen and (max-width: 684px) and (min-width: 435px){
     
